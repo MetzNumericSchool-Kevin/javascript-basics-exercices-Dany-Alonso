@@ -106,7 +106,7 @@ let HealPot = {
     Nom: "Potion de soin",
     Prix: 10,
     Stock: 42
-}
+};
 console.log(HealPot);
 
 
@@ -117,4 +117,29 @@ console.log(HealPot["Prix"]);                   //Affiche le prix de la potion e
 
 
 // Exercice 12 - C'est l'heure de faire l'inventaire...
+
+const Inventaire = [
+    {
+        Nom: "Potion de soin",
+        Prix: 10,
+        Stock: 42 
+    },
+
+    {
+        Nom: "Potion de mana",
+        Prix: 5,
+        Stock: 40 
+    },
+
+    {
+        Nom: "Potion d'exérience'",
+        Prix: 20,
+        Stock: 10 
+    },
+];
+
+console.log(Inventaire);
+
+
+// Exercice 13 - Aventurier, regarde tout ce que je vends !
 
