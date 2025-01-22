@@ -72,7 +72,7 @@ if (StoreOpen) {
 
 // Exercice 6 - Liste des potions
 
-let ArrayPotions = ["Potion de soin" , "Potion de mana" , "Potion d'expérience"];
+const ArrayPotions = ["Potion de soin" , "Potion de mana" , "Potion d'expérience"];
 console.log(ArrayPotions);
 
 
@@ -90,3 +90,8 @@ for (let i = 0; i < ArrayPotions.length; i++) {         // Boucle for pour affic
 
 // Exercice 8 - Ajout d'une nouvelle potion
 
+ArrayPotions.push("Potion d'endurance");
+console.log(ArrayPotions);
+
+
+// Exercice 9 - Finaly, nope.
