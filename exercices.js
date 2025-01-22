@@ -132,7 +132,7 @@ const Inventaire = [
     },
 
     {
-        Nom: "Potion d'exérience'",
+        Nom: "Potion d'exérience",
         Prix: 20,
         Stock: 10 
     },
@@ -143,3 +143,11 @@ console.log(Inventaire);
 
 // Exercice 13 - Aventurier, regarde tout ce que je vends !
 
+for (let i = 0; i < Inventaire.length; i++) {
+    console.log(Inventaire[i].Nom);   
+    console.log(Inventaire[i].Prix);   
+    console.log(Inventaire[i].Stock);   
+}
+
+
+// Exercice 14 - L'heure est venu pour moi d'être un grand marchand de potion !
