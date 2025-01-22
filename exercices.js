@@ -95,3 +95,9 @@ console.log(ArrayPotions);
 
 
 // Exercice 9 - Finaly, nope.
+
+ArrayPotions.pop("Potion d'endurance");
+console.log(ArrayPotions);
+
+
+// Excercice 10 - Rangeons les informations de la potion de soin dans un objet 🧹
