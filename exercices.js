@@ -41,30 +41,36 @@ if (StoreOpen) {
 
 // Exercice 4 - Calcul du prix total d'une commande de potion 🪙
 
-const Orders = parseInt(prompt("Combien de potions de soin veux-tu ?"));
-let TotalPrice = Orders*PriceHealPot
-console.log("Prix de " + Orders + " potions de soins : " + TotalPrice + " 🪙 mon cher Aventurier. 💸");
+// const Orders = parseInt(prompt("Combien de potions de soin veux-tu ?"));
+// let TotalPrice = Orders*PriceHealPot
+// console.log("Prix de " + Orders + " potions de soins : " + TotalPrice + " 🪙 mon cher Aventurier. 💸");
 
 
-// Exercice 5 - Bourse de l'Aventurier 💰
+// // Exercice 5 - Bourse de l'Aventurier 💰
 
-let GoldAdventurer = 700;
-// console.log(GoldAdventurer);
+// let GoldAdventurer = 700;
+// // console.log(GoldAdventurer);
 
-if (GoldAdventurer >= TotalPrice && Orders <= QtyHealPot) {
-    QtyHealPot = QtyHealPot - Orders;
-    // console.log(QtyHealPot);
+// /**
+//  * Condition if avec opération && (ET) pour savoir si l'aventurier possède assez d'argent pour acheter des potions et si la boutique possède assez de potions.
+//  */
+// if (GoldAdventurer >= TotalPrice && Orders <= QtyHealPot) {
+//     QtyHealPot = QtyHealPot - Orders;
+//     // console.log(QtyHealPot);
     
-    GoldAdventurer = GoldAdventurer - TotalPrice;
-    // console.log(GoldAdventurer);
+//     GoldAdventurer = GoldAdventurer - TotalPrice;
+//     // console.log(GoldAdventurer);
     
-} else if (GoldAdventurer < TotalPrice) {
-    console.log("Tu n'as pas assez d'argent");
+// } else if (GoldAdventurer < TotalPrice) {
+//     console.log("Tu n'as pas assez d'argent");
 
-} else {
-    console.log("Il ne reste plus assez de potion");  
+// } else {
+//     console.log("Il ne reste plus assez de potion");  
     
-}
+// }
 
 
 // Exercice 6 - Liste des potions
+
+let ArrayPotions = ["Potion de soin" , "Potion de mana" , "Potion d'expérience"];
+console.log(ArrayPotions);
