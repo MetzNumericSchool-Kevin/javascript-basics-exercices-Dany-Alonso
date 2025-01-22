@@ -74,3 +74,19 @@ if (StoreOpen) {
 
 let ArrayPotions = ["Potion de soin" , "Potion de mana" , "Potion d'expérience"];
 console.log(ArrayPotions);
+
+
+// Exercice 7 - Affichage des potions
+
+console.log(ArrayPotions[0]);                           // Affiche la première potion du tableau
+console.log(ArrayPotions[ArrayPotions.length - 1]);     // Affiche la dernière potion du tableau
+
+for (let i = 0; i < ArrayPotions.length; i++) {         // Boucle for pour afficher toutes les potions du tableau
+    // const test = ArrayPotions[i];
+    console.log(ArrayPotions[i]);  
+    
+}
+
+
+// Exercice 8 - Ajout d'une nouvelle potion
+
