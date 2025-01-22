@@ -42,9 +42,29 @@ if (StoreOpen) {
 // Exercice 4 - Calcul du prix total d'une commande de potion 🪙
 
 const Orders = parseInt(prompt("Combien de potions de soin veux-tu ?"));
-
-console.log("Prix de " + Orders + " potions de soins : " + Orders*PriceHealPot + " 🪙 mon cher Aventurier. 💸");
+let TotalPrice = Orders*PriceHealPot
+console.log("Prix de " + Orders + " potions de soins : " + TotalPrice + " 🪙 mon cher Aventurier. 💸");
 
 
 // Exercice 5 - Bourse de l'Aventurier 💰
 
+let GoldAdventurer = 700;
+// console.log(GoldAdventurer);
+
+if (GoldAdventurer >= TotalPrice && Orders <= QtyHealPot) {
+    QtyHealPot = QtyHealPot - Orders;
+    // console.log(QtyHealPot);
+    
+    GoldAdventurer = GoldAdventurer - TotalPrice;
+    // console.log(GoldAdventurer);
+    
+} else if (GoldAdventurer < TotalPrice) {
+    console.log("Tu n'as pas assez d'argent");
+
+} else {
+    console.log("Il ne reste plus assez de potion");  
+    
+}
+
+
+// Exercice 6 - Liste des potions
