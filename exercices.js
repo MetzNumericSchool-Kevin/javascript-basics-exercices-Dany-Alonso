@@ -149,5 +149,14 @@ for (let i = 0; i < Inventaire.length; i++) {
     console.log(Inventaire[i].Stock);   
 }
 
+/**
+ * Affiche de façon dynamique les propriétés de chacunes des potions
+ */
+for (let i = 0; i < Inventaire.length; i++) {   // Boucle for pour itérer dans le tableau Inventaire pour récupèrer l'index
+    for (const key in Inventaire[i]) {          // For in sur l'object pour récupérer les propriétés dans la const [key] de la potion indexé à [i]
+        console.log(Inventaire[i][key]);        // Affiche dans la console les propriété [key] de la potion récupèrer à l'index [i] du tableau Inventaire 
+    }
+}
+
 
 // Exercice 14 - L'heure est venu pour moi d'être un grand marchand de potion !
