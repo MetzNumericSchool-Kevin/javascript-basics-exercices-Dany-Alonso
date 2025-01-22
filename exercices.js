@@ -101,3 +101,13 @@ console.log(ArrayPotions);
 
 
 // Excercice 10 - Rangeons les informations de la potion de soin dans un objet 🧹
+
+let HealPot = {
+    Nom: "Potion de soin",
+    Prix: 10,
+    Stock: 42
+}
+console.log(HealPot);
+
+
+// Exercice 11 - Affichons les informations de la potion
