@@ -111,3 +111,10 @@ console.log(HealPot);
 
 
 // Exercice 11 - Affichons les informations de la potion
+
+console.log(HealPot.Nom);                       //Affiche le nom de la potion en utilisant la notation pointée `.`
+console.log(HealPot["Prix"]);                   //Affiche le prix de la potion en utilisant la notation crochet `[]`
+
+
+// Exercice 12 - C'est l'heure de faire l'inventaire...
+
