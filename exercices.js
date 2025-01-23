@@ -4,13 +4,13 @@ const nom_sorcier = ("Archibald");
 /**
  * Déclaration de variables
  */
-const monnaie = "🪙";                           // Déclaration de la monnaie pour les exercices
+// const monnaie = "🪙";                           // Déclaration de la monnaie pour les exercices
 
 
 // Exercice 1 - Définition de variables
 
 const store = "Poney Fringuant";               // Déclaration du nom de la boutique en constante
-let QtyHealPot = 42;                              // Déclaration d'une variable pour le nombre de potion de soin
+let QtyHealPot = 42;                           // Déclaration d'une variable pour le nombre de potion de soin
 let PriceHealPot = 10;                         // Déclaration d'une variable pour le prix d'une potion de soin
 let StoreOpen = true;                          // Déclaration d'une variable pour savoir si la boutique est ouverte ou non
 
@@ -20,11 +20,11 @@ let StoreOpen = true;                          // Déclaration d'une variable po
 /**
  * condition pour afficher dans la console un message celon si la boutique est ouverte ou non
  */
-if (StoreOpen) {
-    console.log("Bienvenue dans la boutique " + store + " aventurier ! 🎉");    
-} else {
-    console.log("La boutique " + store + " est fermée, revenez plus tard Aventurier ! 😴");    
-}
+// if (StoreOpen) {
+//     console.log("Bienvenue dans la boutique " + store + " aventurier ! 🎉");    
+// } else {
+//     console.log("La boutique " + store + " est fermée, revenez plus tard Aventurier ! 😴");    
+// }
 
 
 // Exercice 3 - Affichage conditionnel avec switch
@@ -36,7 +36,23 @@ if (StoreOpen) {
 /**
  * Switch ... Case pour afficher dans la console une réponse celon le choix de l'utilisateur
  */
-//
+// switch (QueVeuxTu) {
+//     case 1:
+//         console.log(store);
+//         break;
+//     case 2:
+//         console.log(nom_sorcier);
+//         break;
+//     case 3:
+//         console.log(PriceHealPot);
+//         break;
+//     case 4:
+//         console.log(QtyHealPot);
+//         break;
+//     default:
+//         console.log("Mh... Désolé aventurier, je ne comprends pas ce que tu souhaites. Refais ton choix ! 😕");
+//         break;
+// }
 
 
 // Exercice 4 - Calcul du prix total d'une commande de potion 🪙
@@ -48,7 +64,7 @@ if (StoreOpen) {
 
 // // Exercice 5 - Bourse de l'Aventurier 💰
 
-// let GoldAdventurer = 700;
+// let GoldAdventurer = 100;
 // // console.log(GoldAdventurer);
 
 // /**
@@ -72,91 +88,163 @@ if (StoreOpen) {
 
 // Exercice 6 - Liste des potions
 
-const ArrayPotions = ["Potion de soin" , "Potion de mana" , "Potion d'expérience"];
-console.log(ArrayPotions);
+// const ArrayPotions = ["Potion de soin" , "Potion de mana" , "Potion d'expérience"];
+// console.log(ArrayPotions);
 
 
 // Exercice 7 - Affichage des potions
 
-console.log(ArrayPotions[0]);                           // Affiche la première potion du tableau
-console.log(ArrayPotions[ArrayPotions.length - 1]);     // Affiche la dernière potion du tableau
+// console.log(ArrayPotions[0]);                           // Affiche la première potion du tableau
+// console.log(ArrayPotions[ArrayPotions.length - 1]);     // Affiche la dernière potion du tableau
 
-for (let i = 0; i < ArrayPotions.length; i++) {         // Boucle for pour afficher toutes les potions du tableau
-    // const test = ArrayPotions[i];
-    console.log(ArrayPotions[i]);  
+// for (let i = 0; i < ArrayPotions.length; i++) {         // Boucle for pour afficher toutes les potions du tableau
+//     // const test = ArrayPotions[i];
+//     console.log(ArrayPotions[i]);  
     
-}
+// }
 
 
 // Exercice 8 - Ajout d'une nouvelle potion
 
-ArrayPotions.push("Potion d'endurance");
-console.log(ArrayPotions);
+// ArrayPotions.push("Potion d'endurance");
+// console.log(ArrayPotions);
 
 
-// Exercice 9 - Finaly, nope.
+// // Exercice 9 - Finaly, nope.
 
-ArrayPotions.pop("Potion d'endurance");
-console.log(ArrayPotions);
+// ArrayPotions.pop("Potion d'endurance");
+// console.log(ArrayPotions);
 
 
 // Excercice 10 - Rangeons les informations de la potion de soin dans un objet 🧹
 
-let HealPot = {
-    Nom: "Potion de soin",
-    Prix: 10,
-    Stock: 42
-};
-console.log(HealPot);
+// let HealPot = {
+//     Nom: "Potion de soin",
+//     Prix: 10,
+//     Stock: 42
+// };
+// console.log(HealPot);
 
 
-// Exercice 11 - Affichons les informations de la potion
+// // Exercice 11 - Affichons les informations de la potion
 
-console.log(HealPot.Nom);                       //Affiche le nom de la potion en utilisant la notation pointée `.`
-console.log(HealPot["Prix"]);                   //Affiche le prix de la potion en utilisant la notation crochet `[]`
+// console.log(HealPot.Nom);                       //Affiche le nom de la potion en utilisant la notation pointée `.`
+// console.log(HealPot["Prix"]);                   //Affiche le prix de la potion en utilisant la notation crochet `[]`
 
 
 // Exercice 12 - C'est l'heure de faire l'inventaire...
 
-const Inventaire = [
-    {
-        Nom: "Potion de soin",
-        Prix: 10,
-        Stock: 42 
-    },
+// const InventairePotions = [
+//     {
+//         Nom: "Potion de soin",
+//         Prix: 40,
+//         Stock: 1 
+//     },
 
-    {
-        Nom: "Potion de mana",
-        Prix: 5,
-        Stock: 40 
-    },
+//     {
+//         Nom: "Potion de mana",
+//         Prix: 20,
+//         Stock: 2 
+//     },
 
-    {
-        Nom: "Potion d'exérience",
-        Prix: 20,
-        Stock: 10 
-    },
-];
+//     {
+//         Nom: "Potion d'endurance",
+//         Prix: 20,
+//         Stock: 1 
+//     },
+// ];
 
-console.log(Inventaire);
+// console.log(Inventaire);
 
 
 // Exercice 13 - Aventurier, regarde tout ce que je vends !
 
-for (let i = 0; i < Inventaire.length; i++) {
-    console.log(Inventaire[i].Nom);   
-    console.log(Inventaire[i].Prix);   
-    console.log(Inventaire[i].Stock);   
-}
+// for (let i = 0; i < Inventaire.length; i++) {
+//     console.log(Inventaire[i].Nom);   
+//     console.log(Inventaire[i].Prix);   
+//     console.log(Inventaire[i].Stock);   
+// }
+
+// /**
+//  * Affiche de façon dynamique les propriétés de chacunes des potions
+//  */
+// for (let i = 0; i < Inventaire.length; i++) {   // Boucle for pour itérer dans le tableau Inventaire pour récupèrer l'index
+//     for (const key in Inventaire[i]) {          // For in sur l'object pour récupérer les propriétés dans la const [key] de la potion indexé à [i]
+//         console.log(Inventaire[i][key]);        // Affiche dans la console les propriété [key] de la potion récupèrer à l'index [i] du tableau Inventaire 
+//     }
+// }
+
+
+// Exercice 14 - L'heure est venu pour moi d'être un grand marchand de potion !
+
+/**
+ *  Déclaration des variables
+ */
+let GoldAdventurer = 100;               // Bourse de l'aventurier
+let GoldVendor = 0;                     // Bourse de ma boutique
+const InventairePotions = [             // Inventaire de potions de la boutique
+    {
+        Nom: "Potion de soin",
+        Prix: 40,
+        Stock: 1 
+    },
+
+    {
+        Nom: "Potion de mana",
+        Prix: 20,
+        Stock: 2 
+    },
+
+    {
+        Nom: "Potion d'endurance",
+        Prix: 20,
+        Stock: 1 
+    },
+];
+const InventaireAdventurer = [];        // Inventaire de l'aventurier
+// console.log(GoldAdventurer);
+// console.log(GoldVendor);
+// console.log(InventairePotions);
+// console.log(InventaireAdventurer);
+
+const YourChoice = parseInt(prompt(`Que souhaites-tu avanturier ?
+    1. Acheter une potion
+    2. Vendre une potion
+    3. Quitter`));
 
 /**
  * Affiche de façon dynamique les propriétés de chacunes des potions
  */
-for (let i = 0; i < Inventaire.length; i++) {   // Boucle for pour itérer dans le tableau Inventaire pour récupèrer l'index
-    for (const key in Inventaire[i]) {          // For in sur l'object pour récupérer les propriétés dans la const [key] de la potion indexé à [i]
-        console.log(Inventaire[i][key]);        // Affiche dans la console les propriété [key] de la potion récupèrer à l'index [i] du tableau Inventaire 
+function Potions(params) {
+    for (let i = 0; i < InventairePotions.length; i++) {   // Boucle for pour itérer dans le tableau Inventaire pour récupèrer l'index
+        for (const key in InventairePotions[i]) {          // For in sur l'object pour récupérer les propriétés dans la const [key] de la potion indexé à [i]
+            console.log(InventairePotions[i][key]);        // Affiche dans la console les propriété [key] de la potion récupèrer à l'index [i] du tableau Inventaire 
+        }
     }
 }
 
 
-// Exercice 14 - L'heure est venu pour moi d'être un grand marchand de potion !
+    switch (YourChoice) {
+        case 1:
+            let PotionChoice = parseInt(prompt(`Quelle potion souhaites-tu acheter ?`));
+                switch (PotionChoice) {
+                    case "Potion de soin":
+                        
+                        break;
+                    case "Potion de mana":
+                    
+                        break;
+                    case "Potion d'endurance'":
+                    
+                        break;
+                    default:
+                        break;
+                }
+            break;
+    
+        default:
+            break;
+    }
+// do {
+//     YourChoice;
+// } while (GoldAdventurer !== 0);
